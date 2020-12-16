@@ -4,6 +4,9 @@ import androidx.recyclerview.widget.DiffUtil
 
 class MyDiffUtilCallback(val oldList: List<String>, val newList: List<String>) :
     DiffUtil.Callback() {
+
+    //It Always checks whether 2 items in object is same and its index
+
     override fun getOldListSize(): Int {
         return oldList.size
     }
